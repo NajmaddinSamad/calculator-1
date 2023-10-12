@@ -1,0 +1,104 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+background: #544a7d;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ffd452, #544a7d);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ffd452, #544a7d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.kontainer{
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.calculator{
+border-radius: .8rem;
+box-shadow: .3rem .5rem .5rem .5rem rgba(0 ,0 ,0 , .5);
+}
+
+.display{
+ display: flex;
+justify-content: end;
+align-items: center;
+width: 100%;
+height: 20Vh;
+font-size: 1.8rem;
+font-weight: 700;
+font: bold;
+border-bottom: .12rem solid #444;
+}
+
+.result{
+display: flex;
+justify-content: flex-end;
+border: none;
+max-width: 22rem;
+max-height: 6.3rem;
+overflow-wrap: break-word;
+word-break:break-word;
+overflow-y: hidden;
+text-align: right;
+}
+
+.buttons{
+display: grid;
+grid-template-columns:  1fr 1fr 1fr 1fr; 
+border: none;
+}
+
+button{
+border: none;
+padding: 1.5rem;
+font-size: 1.4rem;
+cursor: pointer;
+background:none;
+}
+
+button:hover{
+color:#aaa;
+transition: all .5s ease-out;
+background-color: rgba(34, 34, 34, .8);
+font:bold;
+font-weight: 500;
+}
+       
+.allclear:hover {
+background-color: rgb(135, 41, 68) ;
+color:#fff;
+}
+
+.increase:hover{
+background-color:rgb(62, 218, 72) ;
+color:#fff;
+}
+
+.decrease:hover{
+background-color: #d4a523;
+color:#fff;
+}
+
+.multiplication:hover{
+background-color: rgb(62, 196, 171);
+color:#fff;
+}
+
+.division:hover{
+background-color: firebrick;
+color:#fff;
+}
+
+.equal:hover{
+background-color: rgb(25, 126, 27);
+color:#fff;
+}
+
+.delete:hover{
+background-color: #9d0a0a;
+color:#fff;
+}
